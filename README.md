@@ -6,11 +6,13 @@ Są to  token Discorda i nazwa serwera na którym ma działać.
 `DISCORD_TOKEN=<TOKEN>  `   
 `DISCORD_GUILD=<SERVER NAME>`
 
-Po stworzeniu obrazu Dockera, należy w interaktywnej sesji wywołać podane komendy
+Po stworzeniu obrazu Dockera
 
 `sudo docker build -t rasa_py .`
 
-`sudo docker run -it "<nazwa>" sh`
+`sudo docker run -it "<nazwa>" sh`   
+
+w interaktywnej sesji należu wywołać podane komendy
 
 `cd /home/discord_bot/model && python3 -m rasa_sdk --actions actions &` (in model dir (/home/discord_bot/model))   
 `rasa run --enable-api &` (in model dir (/home/discord_bot/model))   
