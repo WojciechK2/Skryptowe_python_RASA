@@ -3,22 +3,22 @@
 Credentiale dla bota przechowywane są w pliku .env (trzeba go stworzyć, bo Github nie pozwala na ukryte pliki)
 Są to  token Discorda i nazwa serwera na którym ma działać.
 
-DISCORD_TOKEN=<TOKEN>  
-DISCORD_GUILD=<SERVER NAME>
+`DISCORD_TOKEN=<TOKEN>  `   
+`DISCORD_GUILD=<SERVER NAME>`
 
 Po stworzeniu obrazu Dockera, należy w interaktywnej sesji wywołać podane komendy
 
-sudo docker build -t rasa_py .
+`sudo docker build -t rasa_py .`
 
-sudo docker run -it <nazwa> sh
+`sudo docker run -it "<nazwa>" sh`
 
-cd /home/discord_bot/model && python3 -m rasa_sdk --actions actions &
-rasa run --enable-api &
-cd .. && python3 bot.py &
+`cd /home/discord_bot/model && python3 -m rasa_sdk --actions actions &`
+`rasa run --enable-api &`
+`cd .. && python3 bot.py &`
 
   
 Wywołanie Bota odbywa się poprzez wsponienie (mention) o nim na glownym kanale serwera:
-	@<Bot_name> <message> 
+	`@<Bot_name> <message> `
 
   
   Funkcjonalność:
